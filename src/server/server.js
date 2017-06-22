@@ -4,9 +4,9 @@ import express from 'express';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import path from 'path';
+import db from './mongoose/dbConnect';
 import gameController from './games/gameController';
 import sms from './twilio/sms';
-import db from './mongoose/dbConnect';
 import cronMsg from './cron/cronMessageTask';
 import cronDel from './cron/cronDeleteTask';
 
