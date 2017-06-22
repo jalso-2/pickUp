@@ -70,3 +70,9 @@ grunt.registerTask('dev', [
   'babel',
   'shell:devServer'
 ]);
+
+grunt.registerTask('bypass', [
+  'clean',
+  'babel',
+  'shell:prodServer'
+]);
