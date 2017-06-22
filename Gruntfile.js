@@ -57,13 +57,6 @@ grunt.registerTask('prod', [
   'shell:prodServer'
 ]);
 
-grunt.registerTask('default', [
-  'clean',
-  'eslint',
-  'babel',
-  'shell:prodServer'
-]);
-
 grunt.registerTask('dev', [
   'clean',
   'eslint',
