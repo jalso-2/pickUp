@@ -12,17 +12,26 @@
             <!--<div id="maincard" class="w3-panel  w3-card-4 w3-centered offset-by-two eight columns" >-->
               <p class="instructionsHead w3-panel  w3-card-4 w3-centered offset-by-one ten columns">
                 Pick-up revolutionizes the way sports get played. No more long drawn out phone calls hoping the friend of a friend of a friend
-                will show up, just simply type or text when you want to play and a nearby address and off you go. Pick-up
-                links players with a central location insuring no player gets the long haul. No need for negotiation, you
-                put the time you are available, it joins the group, you reap the benefits.
+                will show up, simply type or text us when you want to play and a nearby address and off you go. Pick-up
+                links players with a central location ensuring no player gets the long haul. No need for negotiation, you
+                put in a time when you are available, we put you in a group, you reap the benefits.
               </p>
             <!--</div>-->
             <ul class="instructions w3-panel w3-card-4 w3-centered offset-by-one ten columns">
-              <li>1. Phone: Type in plain english- the sport, the time, and your location(city included). </li>
-              <li>2. Text it 906-451-5063. </li>
-              <li>3. When enough players have joined the game, a text will be sent with the most prime park location! </li>
-              <li>4. Get your gear, get your sweat band and get on the road! </li>
-              <li>note:(you can also input your request through this site, but who doesn't like getting texts?) </li>
+              <li>Phone Instructions:
+                <ol>
+                  <li>Type in plain English: the sport, the time, and your location(city included). </li>
+                  <li>Text it to 906-451-5063.</li>
+                  <li>Wait for confirmation text messages that keep you in the know!</li>
+                </ol>
+              </li>
+              <li>Web Instructions:
+                <ol>
+                  <li>Fill out the form on our splash page!</li>
+                  <li>Get confirmed and added to the game queue.</li>
+                  <li>Wait for confirmation text messages that keep you in the know!</li>
+                </ol>
+              </li>
             </ul>
           </div>
         </div>
@@ -40,13 +49,13 @@
             <div class="offset-by-two eight columns">
               <label for="sportInput">Sport</label>
               <select class="u-full-width" id="sportInput" ng-model="sportInput" required>
-        <option value="" >Pick A Sport!</option>
-        <option value="soccer" >Soccer</option>
-        <option value="basketball" >Basketball</option>
-        <option value="baseball" >Baseball</option>
-        <option value="football" >Football</option>
-        <option value="volleyball" >Volleyball</option>
-      </select>
+              <option value="default">Pick A Sport!</option>
+              <option value="soccer" >Soccer</option>
+              <option value="basketball" >Basketball</option>
+              <option value="baseball" >Baseball</option>
+              <option value="football" >Football</option>
+              <option value="volleyball" >Volleyball</option>
+            </select>
             </div>
           </div>
           <!-- end of row  -->

@@ -14,7 +14,6 @@ angular.module('gameReqForm', ['pickUp.services', 'google.places', 'ui.mask'])
     $scope.showInput = false;
 
     $scope.howTo = function() {
-      console.log('clicking!')
       $scope.showInput = !$scope.showInput;
     }
     $scope.requestGame = function() {
