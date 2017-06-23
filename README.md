@@ -80,9 +80,7 @@ networks:
 
 services:
   mongodb:
-    image: "bitnami/mongodb:latest"
-    ports:
-      - "27017:27017"
+    image: bitnami/mongodb:latest
     networks:
       - app-tier
     environment:
@@ -90,8 +88,8 @@ services:
       - MONGODB_PASSWORD=INSERT-A-MONGODB-PASSWORD
       - MONGODB_DATABASE=pickup
   pickup:
-    image: "INSERT-DOCKERHUB username/pickup HERE"
-    command: bash -c "while ! </dev/tcp/mongodb/27017; do sleep 1; done; grunt prod;"
+    image: INSERT-DOCKERHUB username/pickup HERE
+    command: bash -c 'while ! </dev/tcp/mongodb/27017; do sleep 1; done; grunt prod;'
     depends_on: 
       - mongodb
     environment:
@@ -104,7 +102,7 @@ services:
     networks:
       - app-tier
     ports: 
-      - "7000:7000"
+      - 7000:7000
 ```
 
 The above should be added into the ~ directory in the deployment environment. Use vim or nano to create a docker-compose.yml file and paste in the above code with replaced values as detailed previously.
