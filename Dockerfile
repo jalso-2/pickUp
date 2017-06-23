@@ -5,6 +5,6 @@ WORKDIR /pickUp
 RUN npm i -g grunt-cli
 RUN npm i
 RUN npm i -g bower
-RUN bower i
+RUN bower install
 EXPOSE 7000
 CMD ["grunt", "bypass"]
