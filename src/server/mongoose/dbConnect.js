@@ -1,7 +1,14 @@
 require('dotenv').config();
 
 import mongoose from 'mongoose';
-mongoose.connect(process.env.MONGO_URI);
+
+const options = {
+  auth: {
+    authSource: 'admin',
+  },
+};
+
+mongoose.connect(process.env.MONGO_URI, options, (err) => console.log(err));
 const db = mongoose.connection;
 
 console.log('MONGO_URI: ', process.env.MONGO_URI);
